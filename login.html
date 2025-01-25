@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            min-height: 100vh;
+            font-family: 'Roboto', sans-serif;
+            background: whitesmoke;
+        }
+        form{
+            background: #989898ce;
+            width: 350px;
+            height: 580px;
+            padding: 75px,50px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        h1{
+            text-align: center;
+            margin-bottom: 45px;
+            color: white;
+            font-size: 40px;
+        }
+
+        .textBox{
+            border-bottom: 2px solid white;
+            position: relative;
+            margin: 35px 0;
+        }
+
+        .textBox input{
+            background: none;
+            border: none;
+            outline: none;
+            width: 100%;
+            color: white;
+            height: 30px;
+            font-size: 20px;
+        }
+
+        .loginbutton{
+            transition: 0.5s;
+            height: 45px;
+            width: 100%;
+            border: none;
+            outline: none;
+            background: whitesmoke;
+            background-size: 200%;
+            font-size: 16px;
+        }
+
+        .loginbutton:hover{
+            background-position: right;
+            font-size:17px;
+        }
+        .signup{
+            color: white;
+            margin-top: 45px;
+            text-align: center;
+        }
+        .signup a{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Login</h1>
+        <div class="textBox">
+            <input type="text" placeholder="Username">
+        </div>
+        <div class="textBox">
+            <input type="password" placeholder="Password">
+        </div>
+        <div>
+            <input type="submit"value="Login"class="loginbutton">
+        </div>
+        <div class="signup">
+            Don't have an account ?
+            <br>
+            <a href="#">Sign up</a>
+        </div>
+    </form>
+</body>
+</html>

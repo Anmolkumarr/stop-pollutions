@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoSip - Sustainable Impact</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            color: #333;
+        }
+
+        header {
+            background: #4CAF50;
+            color: white;
+            padding: 20px 10%;
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .header-text {
+            text-align: center;
+            flex-grow: 1;
+        }
+
+        .login-button {
+            background: #FFD700;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            position: absolute;
+            right: 10%;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        .login-button:hover {
+            background: #e6c200;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+
+        .login-button {
+            background: #FFD700;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-decoration: none;
+            margin-top: 10px;
+            display: inline-block;
+        }
+
+        .login-button:hover {
+            background: #e6c200;
+        }
+
+        .hero {
+            position: relative;
+            background: url('https://static.vecteezy.com/system/resources/thumbnails/023/528/346/original/lviv-ukraine-february-20-2020-a-lot-of-paper-cups-at-a-waste-sorting-station-wastes-of-life-and-production-environmental-pollution-free-video.jpg') center/cover no-repeat;
+            height: calc(100vh - 80px); /* Full screen minus header height */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+            z-index: 1;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5); /* Adjust darkness with alpha value */
+            z-index: -1; /* Ensures the overlay is behind content */
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            margin: 0 0 10px;
+        }
+
+        .hero p {
+            font-size: 1.6rem;
+            margin: 0 0 20px;
+        }
+
+        .hero a {
+            text-decoration: none;
+            background: #FFD700;
+            color: #333;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: 700;
+        }
+
+        section {
+            padding: 40px 10%;
+            text-align: center;
+            background: white; /* Ensures section has no background image */
+        }
+
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .feature {
+            background: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            width: 30%;
+            padding: 20px;
+            margin: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .feature button {
+            background: none;
+            border: none;
+            cursor: pointer;
+            text-align: left;
+            width: 100%;
+            padding: 0;
+        }
+
+        .feature h3 {
+            font-size: 1.5rem;
+            color: #4CAF50;
+            margin: 0;
+        }
+
+        .feature p {
+            margin: 10px 0 0;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px 10%;
+        }
+
+        footer a {
+            color: #FFD700;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="header-text">
+                <h1>Welcome to EcoSip</h1>
+                <p>Reducing paper cup waste, one sip at a time.</p>
+            </div>
+            <a href="login.html" class="login-button">Login</a>
+        </div>
+    </header>
+    
+
+    <div class="hero">
+        <h2>Make a Difference Today</h2>
+        <p>Learn how you can help protect the environment and reduce health risks by ditching paper cups.</p>
+        <a href="#features">Get Started</a>
+    </div>
+
+    <section id="features">
+        <h2>Why Join EcoSip?</h2>
+        <div class="features">
+            <div class="feature">
+                <button onclick="location.href='awareness.html'">
+                    <h3>Raise Awareness</h3>
+                    <p>Discover the environmental and health impacts of disposable paper cups through interactive content.</p>
+                </button>
+            </div>
+            <div class="feature">
+                <button onclick="location.href='impact.html'">
+                    <h3>Track Your Impact</h3>
+                    <p>Log your reusable cup usage and see how much waste you’re preventing.</p>
+                </button>
+            </div>
+            <div class="feature">
+                <button onclick="location.href='community.html'">
+                    <h3>Join the Community</h3>
+                    <p>Collaborate with like-minded individuals to promote sustainability and drive change on campus.</p>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 EcoSip. All Rights Reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+</body>
+</html>
